@@ -7,10 +7,12 @@
 #include <stdio.h>
 
 int main(void) {
+    #if 0
     /* This is an outer comment
        /* This nested comment will break things! */
        The compiler thinks the comment ended above.
     */
-        printf("Comments fixed!\n");
+    #endif
+    printf("Comments fixed!\n");
     return 0;
 }
